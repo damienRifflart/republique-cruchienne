@@ -1,7 +1,6 @@
 "use client"
 
 import { useState } from 'react';
-import { Button } from "../components/ui/button"
 
 export default function Home() {
   const noms = ['Thibault', 'Eliott', 'Elsa', 'Damien', 'Bastien'];
@@ -15,7 +14,7 @@ export default function Home() {
   return (
       <div className="flex justify-center items-center flex-col h-screen gap-5">
         <h1>Nom choisi : {nomChoisi}</h1>
-        <Button onClick={choisirNouveauNom}>Choisir un nouveau nom</Button>
+        <button onClick={choisirNouveauNom} className={"border border-black rounded-lg p-3 bg-gray-200"}>Choisir un nouveau nom</button>
       </div>
   );
 }
