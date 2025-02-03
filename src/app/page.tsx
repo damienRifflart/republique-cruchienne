@@ -3,7 +3,7 @@
 import { useState } from 'react';
 
 export default function Home() {
-  const noms = ['Thibault', 'Eliott', 'Elsa', 'Damien', 'Bastien'];
+  const noms = ['Thibauld', 'Eliott', 'Elsa', 'Damien', 'Bastien'];
   const [nomChoisi, setNomChoisi] = useState('Thibault');
 
   const choisirNouveauNom = () => {
