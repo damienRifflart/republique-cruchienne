@@ -40,7 +40,7 @@ export default function Home() {
         className="absolute top-5 left-5 bg-gray-700 text-white p-2 rounded-md md:hidden" 
         onClick={(e) => { e.stopPropagation(); setMenuOuvert(!menuOuvert); }}
       >
-        {menuOuvert ? <Menu size={24} /> : <CircleX size={24} />}
+        {menuOuvert ? <CircleX size={24} /> : <Menu size={24} />}
       </button>
       
       <div 
