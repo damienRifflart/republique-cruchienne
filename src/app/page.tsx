@@ -22,7 +22,7 @@ export default function Home() {
 
   const ajouterNom = () => {
     if (nouveauNom.trim() === '') return;
-    let random_color = `#${Math.floor(Math.random() * 16777215).toString(16).padStart(6, '0')}`;
+    const random_color = `#${Math.floor(Math.random() * 16777215).toString(16).padStart(6, '0')}`;
     setNoms([...noms, nouveauNom]);
     setCouleurs([...couleurs, random_color]);
     setNouveauNom('');
